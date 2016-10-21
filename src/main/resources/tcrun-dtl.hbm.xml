@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.testingframework.selenium.dto.TcRunDtl" table="ut_tcrundtl" lazy="false">
+		<id name="id" type="long" unsaved-value="null">
+			<generator class="sequence">
+				<param name="sequence">tcrundtl_seq</param>
+			</generator>
+		</id>
+
+		<property name="runHdrId"></property>
+		<many-to-one name="testCaseDTO" class="org.testingframework.selenium.dto.TestCaseDTO"
+			fetch="select">
+			<column name="tcId" not-null="true" />
+		</many-to-one>
+		<!--  
+		<property name="tcId"></property>
+		-->
+		<property name="tcCompStatus"></property>
+		<property name="tcErrorDtl"></property>
+		<property name="screenShotFlag"></property>
+		<property name="testMsg"></property>
+		
+		<set name="tcFile" table="ut_tcrun_file" 
+				inverse="true" lazy="false" cascade="all" fetch="select">
+            <key>
+                <column name="rundtlid" />
+            </key>
+            <one-to-many class="org.testingframework.selenium.dto.TestCaseRunFileDTO" />
+        </set>
+	</class>
+
+</hibernate-mapping>

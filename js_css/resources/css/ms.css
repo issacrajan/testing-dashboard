@@ -1,0 +1,17 @@
+#FromDt {
+	width: 200px;
+	float: right;
+}
+
+#ThruDt {
+	width: 200px;
+	float: right;
+}
+
+.date-form {
+	margin: 10px;
+}
+
+label.control-label span {
+	cursor: pointer;
+}

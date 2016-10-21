@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.testingframework.selenium.dto.UserInfo" table="ut_users" lazy="false">
+		<id name="userId">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="userName"></property>
+		<property name="userPwd"></property>
+		<property name="userRole"></property>
+		<property name="userStatus"></property>
+		<property name="oldPwd"></property>
+		<property name="lastLogingTime"></property>
+		<property name="rememberMe"></property>
+		<property name="userEmail"></property>
+	</class>
+
+</hibernate-mapping>

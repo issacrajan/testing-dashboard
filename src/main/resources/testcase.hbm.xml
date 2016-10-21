@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.testingframework.selenium.dto.TestCaseDTO" table="ut_testcase" lazy="false">
+		<id name="id" type="long" unsaved-value="null">
+			<generator class="sequence">
+				<param name="sequence">test_case_seq</param>
+			</generator>
+		</id>
+
+		<property name="ucid"></property>
+		<property name="tcStatus"></property>
+		<property name="tcName"></property>
+		<property name="tcDesc"></property>
+		<!-- <property name="testCaseDetail"></property> -->
+		<property name="tcJvClassName"></property>
+		<property name="tcJvMethod"></property>
+		<property name="tcCreationDate"></property>
+		<property name="tcCreatedBy"></property>
+		<property name="lastExecutedDate"></property>
+		<property name="tcModifiedBy"></property>
+		<property name="tcModifiedDate"></property>
+		<property name="supportFileName"></property>
+		<property name="executionOrder"></property>
+	</class>
+	<sql-query name="select-tc-for-module">
+		<return alias="testcase" class="org.testingframework.selenium.dto.TestCaseDTO" />
+
+		select * from ut_testcase
+		where ucid in ( select id
+		from ut_usecase
+		where modulename = ?) and
+		tcStatus='A'
+
+	</sql-query>
+	<sql-query name="tc-count-date">
+		<return alias="testcase" class="org.testingframework.selenium.dto.TestCaseDTO" />
+
+		select count(*) from ut_testcase where tccreationdate>=? and
+		tcstatus='A'
+
+	</sql-query>
+	
+</hibernate-mapping>

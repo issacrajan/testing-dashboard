@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.testingframework.selenium.dto.TcRunHdr" table="ut_tcrunhdr" lazy="false">
+		<id name="id" type="long" unsaved-value="null">
+			<generator class="sequence">
+				<param name="sequence">tcrunhdr_seq</param>
+			</generator>
+		</id>
+
+		<property name="runDate"></property>
+		<property name="runUser"></property>
+		<property name="runGroupId"></property>
+		<property name="finishedDate"></property>
+		<property name="successCnt"></property>
+		<property name="failureCnt"></property>
+		<property name="remarks"></property>
+	</class>
+
+</hibernate-mapping>
