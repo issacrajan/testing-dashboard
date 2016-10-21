@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/selenium/lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/commons-dbcp2-2.1.1.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/commons-fileupload-1.3.2.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/commons-lang-2.6.jar" sourcepath="/home/issac/software/apache-commons/commons-lang-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/commons-pool2-2.4.2.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/javassist-3.12.0.GA.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/mybatis-3.0.6.jar" sourcepath="/home/issac/software/mybatis-3.0.6/mybatis-3.0.6-sources.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/mybatis-spring-1.0.2.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/myselenium.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/postgresql-9.4.1208.jre6.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/selenium-server-standalone-2.53.0.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-aop-4.0.2.RELEASE.jar" sourcepath="/home/issac/software/spring-framework4/libs/spring-aop-4.0.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-aspects-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-beans-4.0.2.RELEASE.jar" sourcepath="/home/issac/software/spring-framework4/libs/spring-beans-4.0.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-build-src-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-context-4.0.2.RELEASE.jar" sourcepath="/home/issac/software/spring-framework4/libs/spring-context-4.0.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-context-support-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-core-4.0.2.RELEASE.jar" sourcepath="/home/issac/software/spring-framework4/libs/spring-core-4.0.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-expression-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-framework-bom-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-instrument-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-instrument-tomcat-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-jdbc-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-jms-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-messaging-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-orm-4.0.2.RELEASE.jar" sourcepath="/home/issac/software/spring-framework4/libs/spring-orm-4.0.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-oxm-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-test-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-tx-4.0.2.RELEASE.jar" sourcepath="/home/issac/software/spring-framework4/libs/spring-tx-4.0.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-web-4.0.2.RELEASE.jar" sourcepath="/home/issac/software/spring-framework4/libs/spring-web-4.0.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-webmvc-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-webmvc-portlet-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/selenium/lib/spring-websocket-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="output" path="selenium-dash"/>
+</classpath>
